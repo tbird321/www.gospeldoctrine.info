@@ -1,0 +1,135 @@
+html,
+body {
+    height: 100%;
+}
+
+.leftMenu a {
+    padding-bottom: 5px;
+    font-size: 15px;
+    font-weight:bold;
+    font-family: Georgia,'Times New Roman',serif;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.lessonReview {
+    color: blue;
+}
+
+    .lessonReview:hover {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+.dialog {
+    display: none;
+}
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
+/* Home Page Carousel */
+
+header.carousel {
+    height: 50%;
+}
+
+    header.carousel .item,
+    header.carousel .item.active,
+    header.carousel .carousel-inner {
+        height: 100%;
+    }
+
+    header.carousel .fill {
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+/* 404 Page Styles */
+
+.error-404 {
+    font-size: 100px;
+}
+
+/* Pricing Page Styles */
+
+.price {
+    display: block;
+    font-size: 50px;
+    line-height: 50px;
+}
+
+    .price sup {
+        top: -20px;
+        left: 2px;
+        font-size: 20px;
+    }
+
+.period {
+    display: block;
+    font-style: italic;
+}
+
+/* Footer Styles */
+
+footer {
+    margin: 50px 0;
+}
+
+header.carousel .carousel {
+    height: 70%;
+}
+
+.navbar-toggle {
+    margin-right: 0px;
+}
+
+/* Responsive Styles */
+
+@media(max-width:991px) {
+    .customer-img, .img-related;
+
+{
+    margin-bottom: 30px;
+}
+
+}
+
+@media(min-width:992px) {
+    .container;
+
+{
+    width: 100%;
+}
+
+}
+
+@media(min-width:768px) {
+    .container;
+
+{
+    width: 100%;
+}
+
+.modal-dialog {
+    width: 700px;
+}
+
+}
+
+@media(max-width:767px) {
+    .img-portfolio;
+
+{
+    margin-bottom: 15px;
+}
+}

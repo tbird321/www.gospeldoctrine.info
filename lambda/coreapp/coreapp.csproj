@@ -67,6 +67,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="theme\modernbusiness\data\Menu.json" />
+    <Content Include="data\Menu.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -75,10 +77,50 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin\Login.html" />
+    <Content Include="controls\header\headerFragment.html" />
+    <Content Include="controls\menu\dynamicLeftSidebar.html" />
+    <Content Include="controls\menu\dynamicMenuFragment.html" />
+    <Content Include="controls\menu\menuFragment.html" />
+    <Content Include="data\contentScript.js" />
+    <Content Include="data\Home\header.html" />
+    <Content Include="data\Home\homeContent.html" />
+    <Content Include="data\Images\LogoText.PNG" />
+    <Content Include="data\Images\MyPicture.PNG" />
+    <Content Include="data\Images\scriptureIcon.jpg" />
+    <Content Include="data\Images\scriptures.jpg" />
+    <Content Include="data\ldsgospeldoctrine.css" />
+    <Content Include="index.html" />
+    <Content Include="NTCommentary.html" />
+    <Content Include="NTSeminary.html" />
+    <Content Include="NTSundaySchool.html" />
+    <Content Include="OtherLessons.html" />
+    <Content Include="script\bootstrap\bootstrapMenuHover.js" />
+    <Content Include="script\controllers\adminController.js" />
+    <Content Include="script\controllers\editController.js" />
+    <Content Include="script\controllers\menuController.js" />
+    <Content Include="script\controllers\metaController.js" />
+    <Content Include="script\editorPlugins\imagepaste\docs\install.html" />
+    <Content Include="script\editorPlugins\imagepaste\docs\styles.css" />
+    <Content Include="script\editorPlugins\imagepaste\plugin.js" />
+    <Content Include="script\global\models.js" />
+    <Content Include="script\global\webApi.js" />
+    <Content Include="script\global\webApiUrls.js" />
+    <Content Include="script\global\webApp.js" />
+    <Content Include="script\plugin.js" />
+    <Content Include="Subjects.html" />
+    <Content Include="Talks.html" />
+    <Content Include="theme\modernbusiness\css\modernbusiness.css" />
+    <Content Include="theme\modernbusiness\templates\Bootstrap.html" />
+    <Content Include="theme\modernbusiness\templates\Maserlayout.html" />
+    <Content Include="theme\modernbusiness\templates\portfolio-1-col.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="data\BookOfMormon\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -1,0 +1,55 @@
+﻿<div class="modal fade" id="loginModal" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Login</h4>
+            </div>
+            <div class="modal-body">
+                <form name="loginForm" data-ng-controller="AdminController"
+                    data-ng-submit="login(credentials)" novalidate>
+                    <label for="username">Username:</label>
+                    <input type="text" id="username"
+                        data-ng-model="credentials.username"><br />
+                    <label for="password">Password:</label>
+                    <input type="password" id="password"
+                        data-ng-model="credentials.password">
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<nav data-ng-spinner="" class="navbar navbar-inverse navbar-harvest" role="navigation" data-ng-element-ready="">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="container collapse navbar-collapse" id="bs-example-navbar-collapse-1" data-ng-controller="MenuController">
+            <ul class="nav navbar-nav navbar-left">
+                <li data-ng-repeat="menuitem in menu" class="dropdown">
+                    <a id="{{menuitem.Id}}" data-ng-if="menuitem.Href==''" data-ng-class="{'hide':menuitem.Hide=='true'}" data-ng-click="fire_jscript(menuitem.Jscript)" class="{{dropdownclass(menuitem)}}" data-toggle="{{dropdown(menuitem)}}">{{menuitem.Name}}<b class="caret" data-ng-show="hasChildren(menuitem)"></b></a>
+                    <a id="{{menuitem.Id}}" data-ng-if="menuitem.Href!=''" data-ng-class="{'hide':menuitem.Hide=='true'}" href="{{menuitem.Href}}" class="{{dropdownclass(menuitem)}}" data-toggle="{{dropdown(menuitem)}}">{{menuitem.Name}}<b class="caret" data-ng-show="hasChildren(menuitem)"></b></a>
+                    <ul class="dropdown-menu">
+                        <li data-ng-repeat="childItem in menuitem.ChildItems">
+                            <a id="{{childItem.Id}}" href="{{childItem.Href}}" class="{{dropdownclass(childItem)}}" data-toggle="{{dropdown(childItem)}}">{{childItem.Name}}</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+

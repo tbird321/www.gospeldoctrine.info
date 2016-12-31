@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+    <script src="//cdn.ckeditor.com/4.5.3/full/ckeditor.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="../theme/modernbusiness/css/modernbusiness.css" />
+    <script type="text/javascript" src="../script/global/webApp.js"></script>
+    <script type="text/javascript" src="../script/global/webApi.js"></script>
+    <script type="text/javascript" src="../script/global/webApiUrls.js"></script>
+    <script type="text/javascript" src="../script/global/models.js"></script>
+    <script type="text/javascript" src="../script/controllers/AdminController.js"></script>
+    <title></title>
+</head>
+
+<body>
+    <div data-ng-modules="adminApp">
+        <form name="loginForm" data-ng-controller="AdminController"
+            data-ng-submit="login(credentials)" novalidate>
+            <label for="username">Username:</label>
+            <input type="text" id="username"
+                data-ng-model="credentials.username">
+            <label for="password">Password:</label>
+            <input type="password" id="password"
+                data-ng-model="credentials.password">
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>

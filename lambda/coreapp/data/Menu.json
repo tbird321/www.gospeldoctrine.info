@@ -1,0 +1,23 @@
+﻿[
+{"Id":"programMenu","Name":"Book of Mormon","Href":"","ChildItems":[{"Id":"bmSundaySchool","Name":"Sunday School Lessons","Href":"BOMSundaySchool.html","ChildItems":[]}]},
+
+
+{"Id":"programMenu","Name":"New Testament","Href":"","ChildItems":[{"Id":"ntSundaySchool","Name":"Sunday School Lessons","Href":"NTSundaySchool.html","ChildItems":[]}]},
+
+{"Id":"programMenu","Name":"Old Testament","Href":"","ChildItems":[]},
+
+{"Id":"programMenu","Name":"Doctrine and Covenants","Href":"","ChildItems":[]},
+
+{"Id":"programMenu","Name":"Pearl of Great Price","Href":"","ChildItems":[]},
+
+{"Id":"programMenu","Name":"Church History","Href":"","ChildItems":[]},
+
+{"Id":"programMenu","Name":"Topical Study","Href":"","ChildItems":[{"Id":"tpSubjects","Name":"Subjects","Href":"Subjects.html","ChildItems":[]},
+{"Id":"tpTalks","Name":"Talks","Href":"Talks.html","ChildItems":[]}
+]},
+
+{"Id":"logoutMenu","Name":"Logout","Href":"","Jscript":"$('#loginModal').trigger('logout')","Hide":"true","ChildItems":[]},
+{"Id":"loginMenu","Name":"Login","Href":"","Jscript":"$('#loginModal').modal('toggle');$('#loginModal').modal('show');","ChildItems":[]}
+]
+
+

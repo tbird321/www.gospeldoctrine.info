@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>LDS - Gospel Doctrine New Testament Sunday School</title>
+    <meta name="og:site_name" content="New Testament Gospel Doctrine Sunday School Class">
+    <meta name="og:image" content="www.ldsgospeldoctrine.info/data/Images/scriptureIcon.jpg">
+    <meta name="og:image:type" content="image/jpeg">
+    <meta name="og:url" content="www.ldsgospeldoctrine.info/NTSundaySchool.html">
+    <meta name="og:type" content="website">
+    <meta name="og:description" content="New Testament Gospel Doctrine Sunday School Class">
+    <meta name="og:title" content="LDS Gospel Doctrine">
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="Sunday School,New Testament,Seminary,Mormon,Mormon Doctrine,Lesson,Talks,Subjects,Jesus Christ,Latter Day Saints">
+    <meta name="description" content="New Testament Gospel Doctrine Sunday School Class">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular.min.js"></script>
+    <script src="//cdn.ckeditor.com/4.5.3/full/ckeditor.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="data/ldsgospeldoctrine.css" />
+    <script type="text/javascript" src="script/bootstrap/bootstrapMenuHover.js"></script>
+    <script type="text/javascript" src="script/global/webApp.js"></script>
+    <script type="text/javascript" src="script/global/webApi.js"></script>
+    <script type="text/javascript" src="script/global/webApiUrls.js"></script>
+    <script type="text/javascript" src="script/global/models.js"></script>
+    <script type="text/javascript" src="script/controllers/menuController.js"></script>
+    <script type="text/javascript" src="script/controllers/editController.js"></script>
+    <script type="text/javascript" src="script/controllers/adminController.js"></script>
+    <script type="text/javascript" src="script/controllers/metaController.js"></script>
+
+    <script type="text/javascript" src="data/contentScript.js"></script>
+    <link rel="icon" type="image/png" href="/data/Images/scriptureIcon.jpg">
+</head>
+
+<body data-ng-modules="menuApp,adminApp,editApp,headerApp">
+    <div  >
+        <!-- Navigation -->
+        <div id="headerContent" data-ng-controller="MetaTagController" data-src="data/NewTestament/SundaySchool/Meta.json" data-meta-key="SSLesson1" ></div>
+        <div data-ng-controller="EditorController" style="min-height: 600px;">
+            <div class="adminMode" data-control-id="header1" style="display: none;">Click to Edit</div>
+            <div id="header1" class="editContent" data-ng-include="'data/Home/header.html'" onload="htmlLoaded('header1')" data-src-path="data/Home" data-filename="header.html">
+            </div>
+            <div id="menu" data-ng-include="" data-admin-setup="" data-ng-if="!isMobile" data-src="'/controls/menu/menuFragment.html'" data-src-path="/controls/menu/">
+            </div>
+            <div id="menu" data-ng-include="" data-admin-setup="" data-ng-if="isMobile" data-src="'/controls/menu/dynamicMenuFragment.html'" data-src-path="/controls/menu/">
+            </div>
+            <!-- Page Content -->
+            <div class="container-fluid row" style="font-size: 18px;">
+                <div id="leftSideBar" class="col-md-2 leftMenu" data-ng-include="'/controls/menu/dynamicLeftSidebar.html'" data-src="data/NewTestament/SundaySchool/LeftSidebar.json" >
+                </div>                
+                <div class="col-md-10">
+                    <div class="adminMode" data-control-id="centerContent" style="display: none;">Click to Edit</div>
+                    <div id="centerContent" data-final="true" class="editContent" data-ng-init="setupInitial('data/NewTestament/SundaySchool/homeCenter.html','data/NewTestament/SundaySchool','homeCenter.html')" data-ng-include="CenterInclude" onload="htmlLoaded('centerContent');" data-src-path="$scope.CenterPath" data-filename="$scope.CenterFilename">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer data-ng-controller="MetaTagController">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; LDS Gospel Doctrine Info 2015</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-69739113-1', 'auto');
+  ga('require', 'linkid');
+  ga('send', 'pageview');
+
+    </script>
+</body>
+</html>

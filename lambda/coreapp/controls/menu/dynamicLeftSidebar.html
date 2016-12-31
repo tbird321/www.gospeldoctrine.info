@@ -1,0 +1,16 @@
+﻿<div data-ng-controller="LeftSideBarController">
+    <div class="navbar-left-header">
+        <button type="button" class="navbar-left-toggle visible-xs" data-toggle="collapse" data-target="#left-sidebar">Toggle Left Sidebar
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
+    <div id="left-sidebar" class="navbar-left-collapse">
+        <div  data-ng-repeat="sideItem in leftSideBar">
+            <a id="{{sideItem.Id}}" data-fullPath="{{sideItem.FullPath}}" data-path="{{sideItem.Path}}" data-filename="{{sideItem.Filename}}" data-meta-key="{{sideItem.MetaKey}}" data-ng-click="clickLink(sideItem)">{{sideItem.LinkText}}</a>
+            <br />
+        </div>
+    </div>
+</div>

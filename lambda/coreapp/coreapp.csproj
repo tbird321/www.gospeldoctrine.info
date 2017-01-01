@@ -66,9 +66,13 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="data\DoctrineAndCovenants\SundaySchool\homeCenter.html" />
+    <Content Include="DCSundaySchool.html" />
     <Content Include="packages.config" />
     <Content Include="theme\modernbusiness\data\Menu.json" />
     <Content Include="data\Menu.json" />
+    <Content Include="data\DoctrineAndCovenants\SundaySchool\LeftSidebar.json" />
+    <Content Include="data\DoctrineAndCovenants\SundaySchool\Meta.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

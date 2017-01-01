@@ -6,7 +6,7 @@
 
 {"Id":"programMenu","Name":"Old Testament","Href":"","ChildItems":[]},
 
-{"Id":"programMenu","Name":"Doctrine and Covenants","Href":"","ChildItems":[]},
+{"Id":"programMenu","Name":"Doctrine and Covenants","Href":"","ChildItems":[{"Id":"dtSundaySchool","Name":"Sunday School Lessons","Href":"DCSundaySchool.html","ChildItems":[]}]},
 
 {"Id":"programMenu","Name":"Pearl of Great Price","Href":"","ChildItems":[]},
 
